@@ -41,6 +41,7 @@ Pod::Spec.new do |s|
   s.frameworks = "CFNetwork", "Accelerate"
 
   s.subspec "Core" do |sp|
+    sp.ios.deployment_target = "10.0"
     sp.source_files  = ["Sources/**/*.swift", "Sources/Kingfisher.h"]
     sp.exclude_files = ["Sources/SwiftUI/**"]
   end
